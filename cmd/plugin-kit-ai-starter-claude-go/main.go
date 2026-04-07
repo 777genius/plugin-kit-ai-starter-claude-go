@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	app := pluginkitai.New(pluginkitai.Config{Name: "claude-go-starter"})
+	app := pluginkitai.New(pluginkitai.Config{Name: "plugin-kit-ai-starter-claude-go"})
 	app.Claude().OnStop(func(e *claude.StopEvent) *claude.Response {
 		_ = e
 		return claude.Allow()
